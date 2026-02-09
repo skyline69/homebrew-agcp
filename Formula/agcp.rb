@@ -1,26 +1,26 @@
 class Agcp < Formula
   desc "Lightweight Rust proxy translating Anthropic Claude API to Google Cloud Code API"
   homepage "https://github.com/skyline69/agcp"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/skyline69/agcp/releases/download/v#{version}/agcp-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d5c430f43cf2fa0162c9dcc8c94af06e0ccc242ec837910abb6f7a98790125b1"
+      sha256 "9a3d72bab590375fff64923ab59b500b00e99499a54de74058795323c068db81"
     else
       url "https://github.com/skyline69/agcp/releases/download/v#{version}/agcp-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "992be3fd2b19c2c85e32536c214862d58777d29c145dc1229b9cb945675301c8"
+      sha256 "bdec946fad36fc2bcf3f7c1d429bc9982dda48cb6ad2451fff2840619f9f1fa9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/skyline69/agcp/releases/download/v#{version}/agcp-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e49808230e6109e711ab7ee22cada6e0a60cc44f09934e64ed094b359840612f"
+      sha256 "fa62c4e89e7aaf175097ca130dd418bf6227666381cd93184661dec7754d023a"
     else
       url "https://github.com/skyline69/agcp/releases/download/v#{version}/agcp-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "391b47f5eaa55d35530daacfb15854c32b57575438ba8712634ddff63a1f2499"
+      sha256 "27af967aaf5a71bed069d30fadaff9ee3c873bb50e62489afe466b0df3874c9c"
     end
   end
 
